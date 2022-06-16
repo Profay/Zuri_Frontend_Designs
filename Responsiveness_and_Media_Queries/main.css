@@ -1,13 +1,5 @@
-.row {
-    display: flex;
-    width: 100% !important;
-    padding: 20px 0px;
-   }
-.row .column {
-    margin: 0px 20px;
-    width: 50%;
-   }
- /* import google font family */
+
+/* import google font family */
 @import url('fonts.google.com/specimen/Poppins');
 /* selecting everything */
 * {
@@ -44,10 +36,12 @@ body {
  font-weight: bold;
  text-align: center;
  color: white;
+ margin-top: 3cm;
 }
-#contact h3 {
- margin: 5px 0px 15px;
- text-align: center;
+#contact h5 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
 }
 .row {
  display: flex;
