@@ -8,44 +8,48 @@
  box-sizing: border-box;
 }
 body {
- font-family: 'Open Sans', sans-serif, helvetica, Arial;
- font-weight: 400;
- font-size: 14px;
+ font-family: 'Poppins';
+ font-weight: 400 500 600 700;
+ font-size: 16px;
  background-color: black;
+ width: ;
   
 }
 .container {
  max-width: 800px;
  width: 100%;
  margin: 0 auto;
+ padding-right: 0.5cm;
 }
 #contact {
  background-color: hsl(0, 100%, 74%);
- padding: 10px;
+ padding: 12px;
  margin-top: 120px;
  margin-right: 300px;
  background-image: url(image.jpg);
  background-position: left;
- background-size: cover;
+ background-size: auto;
  background-attachment: fixed;
  background-repeat: no-repeat;
  height: 13cm;
  width: 110%;
 }
 #contact input, button {
- font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+ font: 400 15px 'Poppins';
 }
 #contact h1 {
- font-size: 35px;
  font-weight: bold;
- text-align: center;
+ font-size: 40px;
+ text-align: left;
  color: white;
- margin-top: 3cm;
+ margin-top: 4cm;
+ margin-left: 1cm;
 }
 #contact h5 {
-    text-align: center;
+    text-align: left;
     color: white;
     margin-top: 8px;
+    margin-left: 1cm
 }
 .row {
  display: flex;
@@ -54,6 +58,9 @@ body {
 .row .column {
  width: 50%;
  text-align: center;
+}
+.column {
+    width: 70px;
 }
 .layer{
     border-radius: 5px;
@@ -67,13 +74,13 @@ body {
 
 fieldset {
  border: medium none !important;
- margin:  0 0 10px;
+ margin:  0px;
  min-width: 100%;
  width: 100%;
 }
 #contact input[type=text]{
     width: 100%;
-    padding: 12px 20px 20px;
+    padding: 14px 17px 18px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -81,16 +88,6 @@ fieldset {
     box-sizing: border-box;
     height: 2ex;
 }
-input[type = "radio"] {
- width: 8% !important;
-}
-#contact .row .radio {
- border: 1px solid rgb(150, 150, 150);
- background-color: white;
- margin: 7px 0 10px;
- padding: 5px;
-}
-
 #contact input:hover {
  transition: border-color 0.3s ease-in-out;
  border: 1px solid rgb(68, 68, 68);
@@ -101,13 +98,19 @@ input[type = "radio"] {
     background-color: green;
     padding: 10px;
     margin: 5px 0;
+    color: white;
 }
  
 #contact button:hover {
- background-color: rgba(0, 0, 255, 0.8);
+ background-color: hsl(248, 32% 49%);
 }
  
 #contact input:focus {
  outline: 0;
- border: 1px solid red;
+ border: 1px solid black;
 }  
+.try {
+    border-radius: 5px;
+    width: 80%;
+    padding-top: 60px;
+}
