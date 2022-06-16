@@ -11,11 +11,7 @@ body {
  font-family: 'Open Sans', sans-serif, helvetica, Arial;
  font-weight: 400;
  font-size: 14px;
- color: black;
- /* body background image */
- background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.541), rgba(204, 0, 255, 0.637)), url(image.jpg);
- background-attachment: fixed;
- background-size: cover;
+ background-color: black;
   
 }
 .container {
@@ -25,8 +21,16 @@ body {
 }
 #contact {
  background-color: hsl(0, 100%, 74%);
- padding: 20px;
- margin: 50px 0;
+ padding: 10px;
+ margin-top: 120px;
+ margin-right: 300px;
+ background-image: url(image.jpg);
+ background-position: left;
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ height: 13cm;
+ width: 110%;
 }
 #contact input, button {
  font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
@@ -41,32 +45,44 @@ body {
 #contact h5 {
     text-align: center;
     color: white;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 .row {
  display: flex;
  width: 100% !important;
- padding: 20px 0px;
 }
 .row .column {
- margin: 0px 20px;
  width: 50%;
+ text-align: center;
 }
+.layer{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 fieldset {
  border: medium none !important;
  margin:  0 0 10px;
  min-width: 100%;
  width: 100%;
 }
-#contact input {
- width: 100%;
- border: 1px solid rgb(150, 150, 150);
- background-color: white;
- padding: 10px;
- margin: 5px 0;
+#contact input[type=text]{
+    width: 100%;
+    padding: 12px 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 2ex;
 }
 input[type = "radio"] {
- width: 10% !important;
+ width: 8% !important;
 }
 #contact .row .radio {
  border: 1px solid rgb(150, 150, 150);
