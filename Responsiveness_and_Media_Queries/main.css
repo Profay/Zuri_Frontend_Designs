@@ -1,18 +1,20 @@
 
 /* import google font family */
-@import url('fonts.google.com/specimen/Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 /* selecting everything */
 * {
  padding: 0;
  margin: 0;
  box-sizing: border-box;
 }
+
 body {
- font-family: Poppins;
+ font-family: 'Poppins';
+ font-weight: 400 500 600 700;
  font-size: 16px;
  background-color: black;
- width: 80%;
-  
+
 }
 .container {
  max-width: 800px;
@@ -22,45 +24,65 @@ body {
 }
 #contact {
  background-color: hsl(0, 100%, 74%);
- padding: 0px;
+ padding: 12px;
  margin-top: 120px;
  margin-right: 300px;
  background-image: url(image.jpg);
+ background-position: left;
  background-size: contain;
  background-attachment: fixed;
  background-repeat: no-repeat;
  height: 13cm;
  width: 110%;
 }
+
 #contact input, button {
- font: 400 15px Poppins;
+ font: 400 15px 'Poppins';
 }
+
 #contact h1 {
- font-weight: 900;
- font-size: 36px;
+ font-weight: bold;
+ font-size: 35px;
  text-align: left;
  color: white;
  margin-top: 4cm;
  margin-left: 1cm;
 }
+
 #contact h5 {
+    font-weight: 400;
     text-align: left;
     color: white;
-    margin-top: 8px;
-    margin-left: 1cm;
-    font-size: 12px;
+    margin-top: 7px;
+    margin-left: 1cm
 }
+
+.end-txt {
+    font-weight: 600;
+    font-size: 6px;
+    color: #777777;
+}
+
+.in-txt {
+    font-weight: 700;
+    font-size: 8px;
+    color: red;
+}
+
 .row {
  display: flex;
  width: 100% !important;
 }
+
 .row .column {
  width: 50%;
  text-align: center;
 }
+
 .column {
     width: 70px;
 }
+
 .layer{
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -77,6 +99,7 @@ fieldset {
  min-width: 100%;
  width: 100%;
 }
+
 #contact input[type=text]{
     width: 100%;
     padding: 14px 17px 18px;
@@ -86,12 +109,13 @@ fieldset {
     border-radius: 4px;
     box-sizing: border-box;
     height: 2ex;
-    font-size: small;
 }
+
 #contact input:hover {
  transition: border-color 0.3s ease-in-out;
  border: 1px solid rgb(68, 68, 68);
 }
+
 #contact button {
     width: 100%;
     border: 1px solid rgb(150, 150, 150);
@@ -99,10 +123,8 @@ fieldset {
     padding: 10px;
     margin: 5px 0;
     color: white;
-    font-size: 10px;
-    font-weight: 600;
 }
- 
+
 #contact button:hover {
  background-color: hsl(248, 32% 49%);
 }
@@ -110,9 +132,26 @@ fieldset {
 #contact input:focus {
  outline: 0;
  border: 1px solid black;
-}  
-.try {
-    border-radius: 5px;
+}
+
+.btn {
     width: 80%;
     padding-top: 60px;
+}
+
+#btn {
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.try-txt {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 375px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+
 }
