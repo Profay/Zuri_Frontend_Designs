@@ -8,11 +8,10 @@
  box-sizing: border-box;
 }
 body {
- font-family: 'Poppins';
- font-weight: 400 500 600 700;
+ font-family: Poppins;
  font-size: 16px;
- background-color: black;
- width: ;
+ background-color:;
+ width: 80%;
   
 }
 .container {
@@ -23,23 +22,22 @@ body {
 }
 #contact {
  background-color: hsl(0, 100%, 74%);
- padding: 12px;
+ padding: 0px;
  margin-top: 120px;
  margin-right: 300px;
  background-image: url(image.jpg);
- background-position: left;
- background-size: auto;
+ background-size: contain;
  background-attachment: fixed;
  background-repeat: no-repeat;
  height: 13cm;
  width: 110%;
 }
 #contact input, button {
- font: 400 15px 'Poppins';
+ font: 400 15px Poppins;
 }
 #contact h1 {
- font-weight: bold;
- font-size: 40px;
+ font-weight: 900;
+ font-size: 36px;
  text-align: left;
  color: white;
  margin-top: 4cm;
@@ -49,7 +47,8 @@ body {
     text-align: left;
     color: white;
     margin-top: 8px;
-    margin-left: 1cm
+    margin-left: 1cm;
+    font-size: 12px;
 }
 .row {
  display: flex;
@@ -87,6 +86,7 @@ fieldset {
     border-radius: 4px;
     box-sizing: border-box;
     height: 2ex;
+    font-size: small;
 }
 #contact input:hover {
  transition: border-color 0.3s ease-in-out;
@@ -99,6 +99,8 @@ fieldset {
     padding: 10px;
     margin: 5px 0;
     color: white;
+    font-size: 10px;
+    font-weight: 600;
 }
  
 #contact button:hover {
